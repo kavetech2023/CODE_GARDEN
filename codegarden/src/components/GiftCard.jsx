@@ -4,11 +4,11 @@ import { FaEnvelope, FaFacebook, FaTwitter } from 'react-icons/fa'
 
 export default function GiftCard({ card }) {
   return (
-    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+    <div className="bg-white rounded-lg overflow-hidden shadow-lg">
       <img src={card.image} alt={card.title} className="w-full h-48 object-cover" />
       <div className="p-4">
-        <h3 className="text-xl font-bold mb-2">{card.title}</h3>
-        <p className="text-gray-300 mb-4">
+        <h3 className="text-xl font-bold mb-2 text-gray-800">{card.title}</h3>
+        <p className="text-gray-600 mb-4">
           {card.price === 0 ? 'Free' : `$${card.price.toFixed(2)}`}
         </p>
         <div className="flex justify-between items-center">
@@ -19,13 +19,13 @@ export default function GiftCard({ card }) {
             Preview
           </Link>
           <div className="flex space-x-2">
-            <button className="text-gray-300 hover:text-white">
+            <button className="text-gray-600 hover:text-gray-800">
               <FaEnvelope />
             </button>
-            <button className="text-gray-300 hover:text-white">
+            <button className="text-gray-600 hover:text-gray-800">
               <FaFacebook />
             </button>
-            <button className="text-gray-300 hover:text-white">
+            <button className="text-gray-600 hover:text-gray-800">
               <FaTwitter />
             </button>
           </div>
