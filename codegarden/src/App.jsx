@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import CardPreviewPage from './pages/CardPreviewPage'
 import AboutPage from './pages/AboutPage'
-import SupportUsPage from './pages/SupportUsPage'
+import SupportUSPage from './pages/SupportUSPage'
 import Navbar from './components/Navbar'
 
 export default function App() {
