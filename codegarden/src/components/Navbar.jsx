@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import Logo from '../assets/logo/share-love-logo.svg'
 
 const navItems = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
-  { name: 'Cards', href: '/' },
+  { name: 'Support Us', href: '/support-us' },
 ]
 
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
           <div className="flex h-16 items-center justify-between">
             <div className="flex-shrink-0">
               <Link to="/" className="flex items-center">
-                <img className="h-8 w-auto" src="/logo.png" alt="Logo" />
+                <img className="h-8 w-auto" src={Logo} alt="Logo" />
               </Link>
             </div>
             <nav className="hidden md:flex space-x-8">

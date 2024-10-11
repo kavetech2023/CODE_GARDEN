@@ -1,56 +1,92 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import confetti from 'canvas-confetti';
 
 export default function AboutPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    
+    const duration = 5 * 1000;
+    const animationEnd = Date.now() + duration;
+    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+    function randomInRange(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+    const interval = setInterval(function() {
+      const timeLeft = animationEnd - Date.now();
+
+      if (timeLeft <= 0) {
+        return clearInterval(interval);
+      }
+
+      const particleCount = 50 * (timeLeft / duration);
+      
+      confetti(Object.assign({}, defaults, { 
+        particleCount, 
+        origin: { x: randomInRange(0.1, 0.9), y: Math.random() - 0.2 } 
+      }));
+      confetti(Object.assign({}, defaults, { 
+        particleCount, 
+        origin: { x: randomInRange(0.1, 0.9), y: Math.random() - 0.2 } 
+      }));
+    }, 250);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="container max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-xl">
-        <h1 className="text-5xl font-bold mb-12 text-center text-gray-800">Empowering Education Through Love</h1>
-        
-        <section className="mb-12">
-          <h2 className="text-3xl font-semibold mb-6 text-gray-700">Our Mission</h2>
-          <p className="text-lg mb-4 text-gray-600 leading-relaxed">
-            We are on a mission to revolutionize education in Africa through the power of gift-giving and shared love. Our platform aims to raise funds, create awareness, and foster a global community dedicated to empowering the next generation.
-          </p>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-3xl font-semibold mb-6 text-gray-700">Our Values</h2>
-          <ul className="grid grid-cols-2 gap-4">
-            {['Compassion', 'Education', 'Community', 'Transparency'].map((value) => (
-              <li key={value} className="flex items-center">
-                <svg className="h-6 w-6 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                <span className="text-lg text-gray-700">{value}</span>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-3xl font-semibold mb-6 text-gray-700">Our Goals</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-2 text-blue-700">$10 Million</h3>
-              <p className="text-gray-600">We aim to raise $10 million by 2025 to build schools, provide learning materials, and train teachers across Africa.</p>
-            </div>
-            <div className="bg-green-50 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-2 text-green-700">1 Million Shares</h3>
-              <p className="text-gray-600">Our goal is to have our gift cards shared 1 million times, spreading awareness and love across the globe.</p>
+    <div className="flex flex-col justify-start items-center min-h-screen bg-gradient-to-r from-pink-200 via-red-200 to-yellow-200 p-4">
+      <main className="w-full max-w-4xl">
+        <motion.div
+          className="relative bg-white rounded-3xl shadow-2xl overflow-hidden"
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          style={{
+            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+            background: 'linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%)'
+          }}
+        >
+          <div className="flex flex-col items-center justify-center p-8">
+            <div className="flex flex-col md:flex-row gap-8">
+              <div className="md:w-1/2">
+                <motion.div
+                  className="rounded-2xl shadow-lg overflow-hidden relative"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <img
+                    src="/hero-image.jpg"
+                    alt="Children in a classroom"
+                    className="w-full h-full object-cover"
+                  />
+                </motion.div>
+              </div>
+              <div className="md:w-1/2 flex flex-col justify-center">
+                <h3 className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-700" style={{ fontFamily: 'serif' }}>
+                  About Our Mission
+                </h3>
+                <p className="text-gray-600 mb-4">We're on a mission to revolutionize education in Africa through the power of digital gift-giving. Our platform raises funds, creates awareness, and fosters a global community dedicated to empowering the next generation.</p>
+                <div className="mt-4">
+                  <p className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-700" style={{ fontFamily: 'serif' }}>
+                    Join Our Cause
+                  </p>
+                  <p className="text-gray-600 mt-2">
+                    Every gift card you choose, every share you make, contributes to our mission. Whether it's a paid card directly funding our initiatives or a free card spreading our message, you're making a difference.
+                  </p>
+                  <div className="mt-6">
+                    <a href="/" className="bg-blue-500 text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-blue-600 transition-colors duration-200">
+                      Choose a Card
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-
-        <section>
-          <h2 className="text-3xl font-semibold mb-6 text-gray-700">Join Our Cause</h2>
-          <p className="text-lg mb-4 text-gray-600 leading-relaxed">
-            Every gift card you choose, every share you make, contributes to our mission. Whether it's a paid card directly funding our initiatives or a free card spreading our message, you're making a difference.
-          </p>
-          <p className="text-lg font-semibold text-gray-700">
-            Together, we can create lasting change and empower the next generation through education. Join us in this journey of love, giving, and transformation.
-          </p>
-        </section>
-      </div>
+        </motion.div>
+      </main>
     </div>
-  )
+  );
 }
