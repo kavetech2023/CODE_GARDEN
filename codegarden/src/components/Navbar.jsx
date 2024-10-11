@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import Logo from '../assets/logo/share-love-logo.svg'
+import Logo from '../assets/logo/send-love-logo.svg'
 
 const navItems = [
   { name: 'Home', href: '/' },
