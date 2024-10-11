@@ -13,6 +13,7 @@ export default function AboutPage() {
     function randomInRange(min, max) {
       return Math.random() * (max - min) + min;
     }
+    
 
     const interval = setInterval(function() {
       const timeLeft = animationEnd - Date.now();
