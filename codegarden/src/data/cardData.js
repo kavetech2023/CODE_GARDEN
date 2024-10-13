@@ -94,638 +94,639 @@ import ninety from '../assets/cards/90.jpeg';
 export const giftCards = [
   {
     id:0,
-    title: 'Card 0',
+    title: 'Baby on Board',
     category: 'Baby',
     image: zero,
     price: 5.00
   },
   {
     id:1,
-    title: 'Card 1',
-    category: 'Birthday',
+    title: 'Happy Anniversary',
+    category: 'Anniversary',
     image: one,
     price: 5.99
   },
   {
     id:2,
-    title: 'Card 2',
-    category: 'Wedding',
+    title: 'Appreciate Your Company',
+    category: 'Appreciate',
     image: two,
     price: 4.99
   },
   {
     id:3,
-    title: 'Card 3',
-    category: 'Graduation',
+    title: 'Welcome Little One',
+    category: 'Baby',
     image: three,
     price: 6.99
   },
   {
     id:4,
-    title: 'Card 4',
-    category: 'Holiday',
+    title: 'Happy Birthday',
+    category: 'Birthday',
     image: four,
     price: 3.99
   },
   {
     id:5,
-    title: 'Card 5',
+    title: 'Happy Birthday',
     category: 'Birthday',
     image: five,
     price: 5.99
   },
   {
     id:6,
-    title: 'Card 6',
-    category: 'Wedding',
+    title: 'Happy Birthday',
+    category: 'Birthday',
     image: six,
     price: 4.99
   },
   {
     id:7,
-    title: 'Card 7',
-    category: 'Graduation',
+    title: 'Brighten Your Day',
+    category: 'Appreciate',
     image: seven,
     price: 6.99
   },
   {
     id:8,
-    title: 'Card 8',
-    category: 'Holiday',
+    title: 'Congrats',
+    category: 'Congratulate',
     image: eight,
     price: 3.99
   },
   {
     id:9,
-    title: 'Card 9',
-    category: 'Birthday',
+    title: 'Congrats',
+    category: 'Congratulate',
     image: nine,
     price: 5.99
   },
   {
     id:10,
-    title: 'Card 10',
-    category: 'Wedding',
+    title: 'Dance Some More',
+    category: 'Celebrate',
     image: ten,
     price: 4.99
   },
   {
     id:11,
-    title: 'Card 11',
-    category: 'Graduation',
+    title: 'Forever Grateful',
+    category: 'Appreciate',
     image: eleven,
     price: 6.99
   },
   {
     id:12,
-    title: 'Card 12',
-    category: 'Holiday',
+    title: 'Grateful For You',
+    category: 'Appreciate',
     image: twelve,
     price: 3.99
   },
   {
     id:13,
-    title: 'Card 13',
-    category: 'Birthday',
+    title: 'Hang In There',
+    category: 'Concern',
     image: thirteen,
     price: 5.99
   },
   {
     id:14,
-    title: 'Card 14',
-    category: 'Wedding',
+    title: 'Hang In There',
+    category: 'Concern',
     image: fourteen,
     price: 4.99
   },
   {
     id:15,
-    title: 'Card 15',
-    category: 'Graduation',
+    title: 'Happy Birthday',
+    category: 'Birthday',
     image: fifteen,
     price: 6.99
   },
   {
     id:16,
-    title: 'Card 16',
-    category: 'Holiday',
+    title: 'Happy Birthday',
+    category: 'Birthday',
     image: sixteen,
     price: 3.99
   },
   {
     id:17,
-    title: 'Card 17',
-    category: 'Birthday',
+    title: 'I Love You',
+    category: 'Love',
     image: seventeen,
     price: 5.99
   },
   {
     id:18,
-    title: 'Card 18',
-    category: 'Wedding',
+    title: 'I Love You',
+    category: 'Love',
     image: eighteen,
     price: 4.99
   },
   {
     id:19,
-    title: 'Card 19',
-    category: 'Graduation',
+    title: 'Heal Up',
+    category: 'Concern',
     image: nineteen,
     price: 6.99
   },
   {
     id:20,
-    title: 'Card 20',
-    category: 'Holiday',
+    title: 'I Love You',
+    category: 'Love',
     image: twenty,
     price: 3.99
   },
   {
     id:21,
-    title: 'Card 21',
-    category: 'Birthday',
+    title: 'In Loving Memory',
+    category: 'Tribute',
     image: twentyone,
     price: 5.99
   },
   {
     id:22,
-    title: 'Card 22',
-    category: 'Wedding',
+    title: 'In Loving Memory',
+    category: 'Tribute',
     image: twentytwo,
     price: 4.99
   },
   {
     id:23,
-    title: 'Card 23',
-    category: 'Graduation',
+    title: 'I Love You',
+    category: 'Love',
     image: twentythree,
     price: 6.99
   },
   {
     id:24,
-    title: 'Card 24',
-    category: 'Holiday',
-    image: twentyfour,
-    price: 3.99
+    title: 'All Success To You',
+    category:'Congratulate',
+    image:twentyfour,
+    price:6.00
   },
+
   {
     id:25,
-    title: 'Card 25',
-    category: 'Birthday',
+    title: 'Jesus Christ',
+    category: 'Appreciation',
     image: twentyfive,
     price: 5.99
   },
   {
     id:26,
-    title: 'Card 26',
-    category: 'Wedding',
+    title: 'I Love You',
+    category: 'Love',
     image: twentysix,
     price: 4.99
   },
   {
     id:27,
-    title: 'Card 27',
-    category: 'Graduation',
+    title: 'Grateful For You',
+    category: 'Appreciation',
     image: twentyseven,
     price: 6.99
   },
   {
     id:28,
-    title: 'Card 28',
-    category: 'Holiday',
+    title: 'Love You',
+    category: 'Love',
     image: twentyeight,
     price: 3.99
   },
   {
     id:29,
-    title: 'Card 29',
-    category: 'Birthday',
+    title: 'Love You',
+    category: 'Love',
     image: twentynine,
     price: 5.99
   },
   {
     id:30,
-    title: 'Card 30',
-    category: 'Wedding',
+    title: 'Sending Positive Vibes',
+    category: 'Concern',
     image: thirty,
     price: 4.99
   },
   {
     id:31,
-    title: 'Card 31',
-    category: 'Graduation',
+    title: 'Spread Positivity',
+    category: 'Appreciate',
     image: thirtyone,
     price: 6.99
   },
   {
     id:32,
-    title: 'Card 32',
-    category: 'Holiday',
+    title: 'Stay Strong Always',
+    category: 'Concern',
     image: thirtytwo,
     price: 3.99
   },
   {
     id:33,
-    title: 'Card 33',
-    category: 'Birthday',
+    title: 'Stay Strong Always',
+    category: 'Concern',
     image: thirtythree,
     price: 5.99
   },
   {
     id:34,
-    title: 'Card 34',
-    category: 'Wedding',
+    title: 'Stay Strong Always',
+    category: 'Concern',
     image: thirtyfour,
     price: 4.99
   },
   {
     id:35,
-    title: 'Card 35',
-    category: 'Graduation',
+    title: 'Stellar Job',
+    category: 'Congratulate',
     image: thirtyfive,
     price: 6.99
   },
   {
     id:36,
-    title: 'Card 36',
-    category: 'Holiday',
+    title: 'Stellar Job',
+    category: 'Congratulate',
     image: thirtysix,
     price: 3.99
   },
   {
     id:37,
-    title: 'Card 37',
-    category: 'Birthday',
+    title: 'Thanks',
+    category: 'Appreciate',
     image: thirtyseven,
     price: 5.99
   },
   {
     id:38,
-    title: 'Card 38',
-    category: 'Wedding',
+    title: 'Thank You',
+    category: 'Appreciate',
     image: thirtyeight,
     price: 4.99
   },
   {
     id:39,
-    title: 'Card 39',
-    category: 'Graduation',
+    title: 'Thank You',
+    category: 'Appreciate',
     image: thirtynine,
     price: 6.99
   },
   {
     id:40,
-    title: 'Card 40',
-    category: 'Holiday',
+    title: 'Thank You',
+    category: 'Appreciate',
     image: forty,
     price: 3.99
   },
   {
     id:41,
-    title: 'Card 41',
-    category: 'Birthday',
+    title: 'Thank You',
+    category: 'Appreciate',
     image: fortyone,
     price: 5.99
   },
   {
     id:42,
-    title: 'Card 42',
-    category: 'Wedding',
+    title: 'Thank You',
+    category: 'Appreciate',
     image: fortytwo,
     price: 4.99
   },
   {
     id:43,
-    title: 'Card 43',
-    category: 'Graduation',
+    title: 'Thank You',
+    category: 'Appreciate',
     image: fortythree,
     price: 6.99
   },
   {
     id:44,
-    title: 'Card 44',
-    category: 'Holiday',
+    title: 'Thank You',
+    category: 'Appreciate',
     image: fortyfour,
     price: 3.99
   },
   {
     id:45,
-    title: 'Card 45',
-    category: 'Birthday',
+    title: 'Thinking Of You',
+    category: 'Love',
     image: fortyfive,
     price: 5.99
   },
   {
     id:46,
-    title: 'Card 46',
-    category: 'Wedding',
+    title: 'Thinking Of You',
+    category: 'Love',
     image: fortysix,
     price: 4.99
   },
   {
     id:47,
-    title: 'Card 47',
-    category: 'Graduation',
+    title: 'Thinking Of You',
+    category: 'Love',
     image: fortyseven,
     price: 6.99
   },
   {
     id:48,
-    title: 'Card 48',
-    category: 'Holiday',
+    title: 'Thinking Of You',
+    category: 'Love',
     image: fortyeight,
     price: 3.99
   },
   {
     id:49,
-    title: 'Card 49',
-    category: 'Birthday',
+    title: 'Thinking Of You',
+    category: 'Love',
     image: fortynine,
     price: 5.99
   },
   {
     id:50,
-    title: 'Card 50',
-    category: 'Wedding',
+    title: 'Thinking Of You',
+    category: 'Love',
     image: fifty,
     price: 4.99
   },
   {
     id:51,
-    title: 'Card 51',
-    category: 'Graduation',
+    title: 'Thinking Of You',
+    category: 'Concern',
     image: fiftyone,
     price: 6.99
   },
   {
     id:52,
-    title: 'Card 52',
-    category: 'Holiday',
+    title: 'Thanks',
+    category: 'Appreciate',
     image: fiftytwo,
     price: 3.99
   },
   {
     id:53,
-    title: 'Card 53',
-    category: 'Birthday',
+    title: 'Thank You',
+    category: 'Appreciate',
     image: fiftythree,
     price: 5.99
   },
   {
     id:54,
-    title: 'Card 54',
-    category: 'Wedding',
+    title: 'Thank You',
+    category: 'appreciate',
     image: fiftyfour,
     price: 4.99
   },
   {
     id:55,
-    title: 'Card 55',
-    category: 'Graduation',
+    title: 'Thinking Of You',
+    category: 'Concern',
     image: fiftyfive,
     price: 6.99
   },
   {
     id:56,
-    title: 'Card 56',
-    category: 'Holiday',
+    title: 'Thinking Of You',
+    category: 'Concern',
     image: fiftysix,
     price: 3.99
   },
   {
     id:57,
-    title: 'Card 57',
-    category: 'Birthday',
+    title: 'Thinking Of You',
+    category: 'Concern',
     image: fiftyseven,
     price: 5.99
   },
   {
     id:58,
-    title: 'Card 58',
-    category: 'Wedding',
+    title: 'Thinking Of You',
+    category: 'Concern',
     image: fiftyeight,
     price: 4.99
   },
   {
     id:59,
-    title: 'Card 59',
-    category: 'Graduation',
+    title: 'Thank You',
+    category: 'Appreciate',
     image: fiftynine,
     price: 6.99
   },
   {
     id:60,
-    title: 'Card 60',
-    category: 'Holiday',
+    title: 'Thinking Of You',
+    category: 'Concern',
     image: sixty,
     price: 3.99
   },
   {
     id:61,
-    title: 'Card 61',
-    category: 'Birthday',
+    title: 'Thinking of You',
+    category: 'Concern',
     image: sixtyone,
     price: 5.99
   },
   {
     id:62,
-    title: 'Card 62',
-    category: 'Wedding',
+    title: 'Thinking Of You',
+    category: 'Concern',
     image: sixtytwo,
     price: 4.99
   },
   {
     id:63,
-    title: 'Card 63',
-    category: 'Graduation',
+    title: 'Thinking Of You',
+    category: 'Concern',
     image: sixtythree,
     price: 6.99
   },
   {
     id:64,
-    title: 'Card 64',
-    category: 'Holiday',
+    title: 'Thinking Of You',
+    category: 'Concern',
     image: sixtyfour,
     price: 3.99
   },
   {
     id:65,
-    title: 'Card 65',
-    category: 'Birthday',
+    title: 'Thinking Of You',
+    category: 'Concern',
     image: sixtyfive,
     price: 5.99
   },
   {
     id:66,
-    title: 'Card 66',
-    category: 'Wedding',
+    title: 'Thinking Of You',
+    category: 'Concern',
     image: sixtysix,
     price: 4.99
   },
   {
     id:67,
-    title: 'Card 67',
-    category: 'Graduation',
+    title: 'Thinking Of You',
+    category: 'Concern',
     image: sixtyseven,
     price: 6.99
   },
   {
     id:68,
-    title: 'Card 68',
-    category: 'Holiday',
+    title: 'Thinking Of You',
+    category: 'Love',
     image: sixtyeight,
     price: 3.99
   },
   {
     id:69,
-    title: 'Card 69',
-    category: 'Birthday',
+    title: 'Safe Travels',
+    category: 'Travel',
     image: sixtynine,
     price: 5.99
   },
   {
     id:70,
-    title: 'Card 70',
+    title: 'Congratulations On Your Wedding',
     category: 'Wedding',
     image: seventy,
     price: 4.99
   },
   {
     id:71,
-    title: 'Card 71',
-    category: 'Graduation',
+    title: 'Congratulations On Your Wedding',
+    category: 'Wedding',
     image: seventyone,
     price: 6.99
   },
   {
     id:72,
-    title: 'Card 72',
-    category: 'Holiday',
+    title: 'Congratulations On Your Wedding',
+    category: 'Wedding',
     image: seventytwo,
     price: 3.99
   },
   {
     id:73,
-    title: 'Card 73',
-    category: 'Birthday',
+    title: 'Congratulations On Your Wedding',
+    category: 'Wedding',
     image: seventythree,
     price: 5.99
   },
   {
     id:74,
-    title: 'Card 74',
-    category: 'Wedding',
+    title: 'well Earned',
+    category: 'Appreciate',
     image: seventyfour,
     price: 4.99
   },
   {
     id:75,
-    title: 'Card 75',
-    category: 'Graduation',
+    title: 'Thinking Of You',
+    category: 'Concern',
     image: seventyfive,
     price: 6.99
   },
   {
     id:76,
-    title: 'Card 76',
-    category: 'Holiday',
+    title: 'You Are Special',
+    category: 'Appreciate',
     image: seventysix,
     price: 3.99
   },
   {
     id:77,
-    title: 'Card 77',
-    category: 'Birthday',
+    title: 'You Are Strong',
+    category: 'Appreciate',
     image: seventyseven,
     price: 5.99
   },
   {
     id:78,
-    title: 'Card 78',
-    category: 'Wedding',
+    title: 'You Are Strong',
+    category: 'Appreciate',
     image: seventyeight,
     price: 4.99
   },
   {
     id:79,
-    title: 'Card 79',
-    category: 'Graduation',
+    title: 'You Heal Me',
+    category: 'Love',
     image: seventynine,
     price: 6.99
   },
   {
     id:80,
-    title: 'Card 80',
-    category: 'Holiday',
+    title: 'You Inspire Me',
+    category: 'Appreciate',
     image: eighty,
     price: 3.99
   },
   {
     id:81,
-    title: 'Card 81',
-    category: 'Birthday',
+    title: 'You Inspire Me',
+    category: 'Appreciate',
     image: eightyone,
     price: 5.99
   },
   {
     id:82,
-    title: 'Card 82',
-    category: 'Wedding',
+    title: 'You Matter Always',
+    category: 'Concern',
     image: eightytwo,
     price: 4.99
   },
   {
     id:83,
-    title: 'Card 83',
-    category: 'Graduation',
+    title: 'You Matter Always',
+    category: 'Concern',
     image: eightythree,
     price: 6.99
   },
   {
     id:84,
-    title: 'Card 84',
-    category: 'Holiday',
+    title: 'You Shine Bright',
+    category: 'Appreciate',
     image: eightyfour,
     price: 3.99
   },
   {
     id:85,
-    title: 'Card 85',
-    category: 'Birthday',
+    title: 'You Shine Bright',
+    category: 'Appreciate',
     image: eightyfive,
     price: 5.99
   },
   {
     id:86,
-    title: 'Card 86',
-    category: 'Wedding',
+    title: 'Welcome Little One',
+    category: 'Baby',
     image: eightysix,
     price: 4.99
   },
   {
     id:87,
-    title: 'Card 87',
-    category: 'Graduation',
+    title: 'Welcome Little One',
+    category: 'Baby',
     image: eightyseven,
     price: 6.99
   },
   {
     id:88,
-    title: 'Card 88',
-    category: 'Holiday',
+    title: 'Happy Birthday',
+    category: 'Birthday',
     image: eightyeight,
     price: 3.99
   },
   {
     id:89,
-    title: 'Card 89',
+    title: 'Happy Birthday',
     category: 'Birthday',
     image: eightynine,
     price: 5.99
   },
   {
     id:90,
-    title: 'Card 90',
-    category: 'Wedding',
+    title: 'Happy Birthday',
+    category: 'Birthday',
     image: ninety,
     price: 4.99
   },

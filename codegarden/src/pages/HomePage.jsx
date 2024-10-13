@@ -5,7 +5,7 @@ import { giftCards } from '../data/cardData'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
 
-const categories = ['All', 'Birthday', 'Wedding', 'Graduation', 'Holiday']
+const categories = ['All', 'Love','Anniversary', 'Congratulate','Celebrate', 'Birthday', 'Baby', 'Concern', 'Appreciate', 'Tribute']
 
 export default function HomePage() {
   const [selectedCategory, setSelectedCategory] = useState('All')
@@ -82,8 +82,12 @@ export default function HomePage() {
 
   const paginatedCards = filteredCards.slice((currentPage - 1) * cardsPerPage, currentPage * cardsPerPage)
 
+  useEffect(() => {
+    setCurrentPage(1) // Reset to first page when category changes
+  }, [selectedCategory])
+
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center bg-gradient-to-br from-purple-400 to-indigo-600">
       <main className="w-full max-w-7xl p-6">
         <div className="mb-6">
           <h2 className="text-3xl font-bold mb-3 text-gray-800">Warm Hearts, Bright Futures</h2>
@@ -145,7 +149,7 @@ export default function HomePage() {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
-              className="bg-white p-6 rounded-lg max-w-3xl w-full m-4 relative overflow-auto"
+              className="bg-white  rounded-lg max-w-3xl w-full m-4 relative overflow-auto"
               style={{ maxHeight: '100vh' }}
               onClick={(e) => e.stopPropagation()}
             >
@@ -162,11 +166,19 @@ export default function HomePage() {
                     transition={{ duration: 0.5 }}
                     style={{ cursor: 'default' }}
                     whileLoading={{ filter: "blur(5px)" }}
+                    onLoad={() => {
+                      // Dynamically resize the image for faster loading
+                      const img = document.querySelector('motion.img');
+                      if (img) {
+                        img.style.width = '100%';
+                        img.style.height = 'auto';
+                      }
+                    }}
                   />
                 </div>
                 <div className="md:w-1/2 p-4">
                   <div className="mb-4">
-                    <label htmlFor="recipientName" className="block text-sm font-medium text-gray-700 mb-2">Recipient's Name</label>
+                    <label htmlFor="recipientName" className="block text-sm font-medium text-gray-700 mb-2">Send To: (name)</label>
                     <input
                       id="recipientName"
                       value={recipientName}

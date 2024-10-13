@@ -11,8 +11,9 @@ export default function GiftCard({ card }) {
           {card.price === 0 ? 'Free' : 'Paid'}
         </div>
       </div>
-      <div className="h-full">
+      <div className="h-full relative">
         <img src={card.image} alt={card.title} className="w-full h-full object-contain" />
+      
       </div>
     </div>
   )

@@ -38,7 +38,7 @@ export default function AboutPage() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-start items-center min-h-screen bg-gradient-to-r from-pink-200 via-red-200 to-yellow-200 p-4">
+    <div className="flex flex-col justify-start items-center min-h-screen bg-gradient-to-br from-purple-400 to-indigo-600 p-4">
       <main className="w-full max-w-4xl">
         <motion.div
           className="relative bg-white rounded-3xl shadow-2xl overflow-hidden"
