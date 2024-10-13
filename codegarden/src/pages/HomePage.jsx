@@ -4,6 +4,7 @@ import GiftCard from '../components/GiftCard'
 import { giftCards } from '../data/cardData'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
+import { FaPaperPlane } from 'react-icons/fa'
 
 const categories = ['All', 'Love','Anniversary', 'Congratulate','Celebrate', 'Birthday', 'Baby', 'Concern', 'Appreciate', 'Tribute']
 
@@ -184,7 +185,7 @@ export default function HomePage() {
                       value={recipientName}
                       onChange={(e) => setRecipientName(e.target.value)}
                       className="w-full px-3 py-2 text-gray-700 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 font-bold text-lg"
-                      placeholder="Recipient's Name"
+                      
                     />
                   </div>
                   <div className="mt-4">
@@ -195,7 +196,7 @@ export default function HomePage() {
                       onChange={(e) => setHeartfeltMessage(e.target.value)}
                       className="w-full px-3 py-2 text-gray-700 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 font-bold text-lg"
                       rows="7"
-                      placeholder="Enter your heartwarming message here"
+                      
                       maxLength="140"
                     ></textarea>
                     <div className="text-right text-sm text-gray-500 mt-1">
@@ -209,28 +210,30 @@ export default function HomePage() {
                       value={senderName}
                       onChange={(e) => setSenderName(e.target.value)}
                       className="w-full px-3 py-2 text-gray-700 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 font-bold text-lg"
-                      placeholder="Your Name"
+                     
                     />
                   </div>
-                  <div className="flex space-x-4 mb-4">
+                  
+                  <Link to={`/card-preview/${selectedCard.id}`} state={{ heartfeltMessage, recipientName, senderName }}>
+                      <motion.button
+                        className="flex bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <FaPaperPlane size={20} style={{ marginRight: '0.5em' }} />
+                        <span>SEND</span>
+                      </motion.button>
+                    </Link>
+                    <div className="flex space-x-4 mt-4">
                     <motion.button
                       className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       onClick={handleExplode}
                     >
-                      {isExploded ? 'Woohoo! 🎉' : 'Select This Card'}
+                      {isExploded ? 'Woohoo! 🎉' : 'Celebrate!'}
                     </motion.button>
                   </div>
-                  <Link to={`/card-preview/${selectedCard.id}`} state={{ heartfeltMessage, recipientName, senderName }}>
-                      <motion.button
-                        className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        SEND
-                      </motion.button>
-                    </Link>
                 </div>
               </div>
               <button
