@@ -83,7 +83,7 @@ export default function CardPreviewPage() {
     const encodedMessage = btoa(heartfeltMessage);
     const encodedRecipientName = btoa(recipientName);
     const encodedSenderName = btoa(senderName);
-    return `${window.location.origin}/gift-card-reveal/${id}?m=${encodedMessage}&r=${encodedRecipientName}&s=${encodedSenderName}`;
+    return `${window.location.origin}/card-preview/${id}?m=${encodedMessage}&r=${encodedRecipientName}&s=${encodedSenderName}`;
   };
 
   const handleShare = (platform) => {
